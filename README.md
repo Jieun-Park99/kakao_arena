@@ -33,6 +33,7 @@ train 데이터에 있는 모든 tag들을 uniq_tag로 둔다. 원래 tag로 쓰
   + tag & song: only_tag와 동일
   + only_song: 노래들의 장르명을 word2vec에 넣고 유사도로 추천
   + nothing: 
+  
 
 ### 2-2. Word2vec을 이용한 Song 예측<br>
 비정형 데이터만 있다면 tag가 모여있어서 추천받는 것처럼 tag와 plylist도 연관이 있으니 같은 방법으로 추천받을 수 있다고 판단
