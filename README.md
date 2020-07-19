@@ -1,4 +1,4 @@
-# :musical_score: Melon Playlist Continuation using Word2vec & Autoencoder
+# :headphones: Melon Playlist Continuation using Word2vec & Autoencoder
 
 ###  2020 kakao arena
 플레이리스트에 수록된 곡과 태그의 절반 또는 전부가 숨겨져 있을 때, __주어지지 않은 곡들과 태그를 예측__ 하는 것이 목표
