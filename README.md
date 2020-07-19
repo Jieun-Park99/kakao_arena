@@ -35,14 +35,14 @@ train 데이터에 있는 모든 tag들을 uniq_tag로 둔다. 원래 tag로 쓰
   + nothing: 
   
 
-### :diamonds:2-2. Word2vec을 이용한 Song 예측<br>
+### :diamonds: 2-2. Word2vec을 이용한 Song 예측<br>
 비정형 데이터만 있다면 tag가 모여있어서 추천받는 것처럼 tag와 plylist도 연관이 있으니 같은 방법으로 추천받을 수 있다고 판단
   + only_plylst: plylst 실질형태소와 word2vec의 결과 유사도 1등을 사용하여 title과 tag가 하나라도 겹치는 플레이리스트의 song들을 대상으로 빈도수 top 100 추천
   + plylst_tag: only_plylst와 같은 방법으로 추천 (w2v의 input만 실질형태소와 tag)
   + only_tag: only_plylst와 같은 방법으로 추천 (w2c의 input만 tag)
 
 
-### :diamonds:2-3. Autoencoder를 이용한 Song 예측<br>
+### :diamonds: 2-3. Autoencoder를 이용한 Song 예측<br>
 데이터가 커서 one-hot-encoding을 쓸 수 없어 라벨인코딩을 통해 input데이터를 만들고 encoding과 decoding과정을 거쳐 모델을 만든다.
 song id가 input이었기에 output을 정보로 이용할 수는 없다. decoder output이 아닌 latent space를 사용한다면 backpropagation도 input값에 가장 가까운 값이 되기 위해 진행되므로 모델의 가운데 hidden layer인 latent space를 사용하면 차원이 축소된 변수들의 군집이 형성되어 있음을 알 수 있다. 잘 만들어진 autoencoder의 latent space를 사용하여 latent vector 추출 후 가까운 거리의 playlist 추천받기
 
