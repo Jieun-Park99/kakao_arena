@@ -20,7 +20,8 @@
 * khaiii 이전의 데이터 전처리를 해준다.
 
 ### 2. 데이터 속 다양한 경우의 수
-![image](https://user-images.githubusercontent.com/56948006/87875840-07a81e80-ca0f-11ea-8297-fa26f1d2275f.png)
+![image](https://user-images.githubusercontent.com/56948006/87875892-4dfd7d80-ca0f-11ea-99c8-85e148ce87f9.png)
+
 * Word2vec을 이용한 Tag와 Song 예측
 * Autoencoder을 이용한 Song 예측
 
